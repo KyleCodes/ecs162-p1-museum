@@ -86,13 +86,36 @@ footer {
     justify-content: center;
     padding-left: 18vw;
     padding-right: 18vw;
-    padding-bottom: 4vw;
+    padding-bottom: 3vw;
 }
 
-.foot {
-    background-color: aqua;
-    height: 100px;
-    dispay: flex;
-    flex-dirction: row;
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items:center;*/
+    background-color: lightblue;
+    padding: 3vw;
+}
 
+#building {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+#hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+#status {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    flex-grow: 3;
 }
