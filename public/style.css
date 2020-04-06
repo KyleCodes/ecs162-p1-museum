@@ -13,21 +13,40 @@ body {
 .header-bar {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    /*padding: 5px;*/
 }
 
-.title {
-    order: 1
+.titl {
+    order: 1;
+    color: blue;
 }
 
 .user {
-    order: 2
+    order: 2;
+    color: green;
+    align-content: flex-start;
 }
 
 
 .countdown {
+    display: flex;
     color: white;
     background-color: black;
-    display: flex;
     justify-content: center;
+}
+
+.title {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.car {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 300px;
+    flex-basis: 50%;
 }
