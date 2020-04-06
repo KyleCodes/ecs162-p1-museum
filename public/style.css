@@ -1,14 +1,33 @@
+header {
+    font-family: Montserrat
+}
+
 body {
-    background-color: powderblue;
+    font-family: Montserrat
 }
 
-h1 {
-    color: blue;
+.redText {
+    color: red
 }
 
-p {
-    color: red;
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-/*font-family: 'Open Sans', sans-serif;*/
+.title {
+    order: 1
+}
 
+.user {
+    order: 2
+}
+
+
+.countdown {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
