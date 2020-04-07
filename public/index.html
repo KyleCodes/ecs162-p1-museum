@@ -17,8 +17,6 @@
 
 <body>
 
-<!-- run the script for interactivity-->
-<script src="./page.js"></script>
 
 <!-- title bar of website-->
 <header>
@@ -49,7 +47,7 @@
     <!--    contains headline of the exhibit-->
     <div class="headline">
         <p style="font-weight: bold; font-size: 140%">Stephan Kaltenbach: The Beginning and The End</p>
-        <p style="font-weight: bold; font-size: 115%">On view January 26-May 10, 2020</>
+        <p style="font-weight: bold; font-size: 115%">On view January 26-May 10, 2020</p>
     </div>
 
     <!--========================================-->
@@ -59,39 +57,57 @@
 
     <div class="car">
         <div class="my-slides">
-            <div class="numtext"></div>
+            <div class="numtext">1 / 4</div>
             <img src="../assets/fabric.jpg" style="width: 100%">
-            <div class="caption">1</div>
+            <div class="caption">
+                <p>
+                    Stephen Kaltenbach and guests, MODERN DRAPERY, 2020. Felt Fabric, 45 x 60 inches.
+                </p>
+            </div>
         </div>
 
         <div class="my-slides">
-            <div class="numtext"></div>
+            <div class="numtext">2 / 4</div>
             <img src="../assets/fatherPortrait.jpg" style="width: 100%">
-            <div class="caption">2</div>
+            <div class="caption">
+                <p>
+                    Stephen Kaltenbach, Portrait of My Father, 1972-79. Acrylic on canvas, 114 x 170 3/4 inches.
+                </p>
+            </div>
         </div>
 
         <div class="my-slides">
-            <div class="numtext"></div>
+            <div class="numtext">3 / 4</div>
             <img src="../assets/openAfterDeath.jpg" style="width: 100%">
-            <div class="caption">3</div>
+            <div class="caption">
+                <p>
+                    Stephen Kaltenbach, Room Cube, 1967. Blueprint, 18 x 24 inches, edition of 10.
+                </p>
+            </div>
         </div>
 
         <div class="my-slides">
-            <div class="numtext"></div>
+            <div class="numtext">4 / 4</div>
             <img src="../assets/roomCube.jpg" style="width: 100%">
-            <div class="caption">4</div>
+            <div class="caption">
+                <p>
+                    Stephen Kaltenbach, OPEN AFTER MY DEATH, 1970. Mild steel, engraved, with unknown contents, 3 x 6 x
+                    3 inches.
+                </p>
+            </div>
         </div>
 
-        <a class="prev" onclick="">&#10094;</a>
-        <a class="next" onclick="">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <br>
 
     <div style="text-align:center">
-        <span class="dot" onclick=""></span>
-        <span class="dot" onclick=""></span>
-        <span class="dot" onclick=""></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
     </div>
 
     <!--========================================-->
@@ -129,12 +145,12 @@
 <footer>
     <div class=footer>
         <div id="building">
-            <p style="font-weight:bold">manetti shrem museum <br><br></p>
+            <p style="font-weight: bold">manetti shrem museum <br><br></p>
             <p>254 Old Davis Rd. <br>Davis, CA 95616</p>
         </div>
 
         <div id="hours">
-            <p style="font-weight:bold">Hours <br><br></p>
+            <p style="font-weight: bold">Hours <br><br></p>
             <ul>
                 <li>Tuesday, Wednesday, and Friday: Noon-6pm</li>
                 <li>Thursday: Noon-9pm</li>
@@ -144,7 +160,8 @@
         </div>
 
         <div id="status">
-            <p style="font-weight:bold">The Manetti Shrem Museum will be temporarily closed starting March 16, 2020 <br><br>
+            <p style="font-weight: bold">The Manetti Shrem Museum will be temporarily closed starting March 16, 2020
+                <br><br>
             </p>
             <p>This is to prioritize the health and safety of our students, faculty, and the community at large. Thank
                 you
@@ -154,6 +171,8 @@
     </div>
 </footer>
 
+<!-- run the script for interactivity-->
+<script src="./page.js"></script>
 
 <!--TODO: add glitch footer back in.-->
 <!--TODO: ADD 4th Circle dot-->
