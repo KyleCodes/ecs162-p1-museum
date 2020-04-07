@@ -1,8 +1,16 @@
+/*
+//========================================================
+//  QUICK GLOBAL CHANGES
+*/
+
+
+/*  Remove styling on links*/
 a {
     color: black;
     text-decoration: none;
 }
 
+/*  Set global fonts*/
 header {
     font-family: Montserrat
 }
@@ -13,27 +21,29 @@ body {
 
 footer {
     font-family: Montserrat
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*align-items:center;*/
-    background-color: lightblue;
-    padding: 3vw;
 }
 
+/*
+//========================================================
+//  STYLING OF HEADER
+*/
+
+/*  Divide into left and right section*/
 .header-bar {
     display: flex;
     justify-content: space-between;
     height: 70px;
 }
 
+/*  Left: museum name*/
 .title {
     order: 1;
     align-self: center;
     padding-left: 25px;
 }
 
-.user {
+/*  Right: user museum actions*/
+.actions {
     order: 2;
     align-self: flex-start;
     display: flex;
@@ -45,6 +55,11 @@ footer {
     font-size: 120%;
 }
 
+/*
+//========================================================
+//  STYLING OF COUNTDOWN TIME
+*/
+
 .countdown {
     display: flex;
     color: white;
@@ -55,6 +70,10 @@ footer {
     height: 20vw;
 }
 
+/*
+//========================================================
+//  STYLING OF EXHIBIT TITLE
+*/
 .headline {
     display: flex;
     color: black;
@@ -66,13 +85,17 @@ footer {
     padding-bottom: 2vw;
 }
 
-#t1 {
-    font-size: 140%;
-}
+/*
+//========================================================
+//  STYLING OF IMAGE SLIDESHOW (QUITE A LOT HERE)
+*/
 
-#t2 {
-    font-size: 115%;
-}
+/*  #f2f2f2   -- I believe this is the text color in the description
+    #778a93   -- highlighted dot for current slide
+    #c6d2da   -- regular dot color
+
+
+ */
 
 .car {
     display: flex;
@@ -135,8 +158,10 @@ footer {
 }
 
 
-/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow*/
-
+/*
+//========================================================
+//  STYLING OF THE DESCRIPTION OF THE EXHIBIT
+*/
 
 .desc {
     display: flex;
@@ -145,6 +170,20 @@ footer {
     padding-left: 18vw;
     padding-right: 18vw;
     padding-bottom: 3vw;
+}
+
+/*
+//========================================================
+//  STYLING OF TBE FOOTER
+*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items:center;*/
+    background-color: #c6d2da;
+    padding: 3vw;
 }
 
 #building {

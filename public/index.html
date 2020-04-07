@@ -1,79 +1,84 @@
-<!-- This is the awful HTML comment syntax -->
 <!DOCTYPE html> <!-- Message to browser...I think I am HTML -->
 <html lang="en">
-<!-- My text is in English -->
 
 <head>
-    <meta charset="utf-8"> <!-- Binary encoding of characters -->
+    <meta charset="utf-8">
     <title>Manetti Shrem Museum of Art</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This will come in handy later -->
 
-    <!-- import the webpage's css -->
+    <!--    import the webpage's style sheets-->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
+    <!--    get fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- run the script for interactivity-->
 <script src="./page.js"></script>
 
+<!-- title bar of website-->
 <header>
     <div class="header-bar">
         <div class="title">
             <a href="">
-                jan shrem and maria <span style="color:red">manetti shrem museum</span> of art
+                <span style="color: #2a2d7c">jan shrem and maria</span>
+                <span style="color: #c9523d"> manetti shrem museum</span>
+                <span style="color: #2a2d7c"> of art</span>
             </a>
         </div>
-        <div class="user">
-            <div>
-                <a href="">home</a>
-            </div>
-            <div>
-                <a href="">visit</a>
-            </div>
-            <div>
-                <a href="">about</a>
-            </div>
+        <div class="actions">
+            <div><a href="">home</a></div>
+            <div><a href="">visit</a></div>
+            <div><a href="">about</a></div>
         </div>
     </div>
 </header>
 
 
+<!-- main content of the page-->
 <main>
+    <!--    contains countdown timer-->
     <div class="countdown">
         <p id="counter"></p>
     </div>
 
+    <!--    contains headline of the exhibit-->
     <div class="headline">
-        <p style="font-weight: bold" id="t1">Stephan Kaltenbach: The Beginning and The End</p>
-        <p style="font-weight: bold" id="t2">On view January 26-May 10, 2020</>
+        <p style="font-weight: bold; font-size: 140%">Stephan Kaltenbach: The Beginning and The End</p>
+        <p style="font-weight: bold; font-size: 115%">On view January 26-May 10, 2020</>
     </div>
+
+    <!--========================================-->
+    <!--            IMAGE SLIDESHOW            -->
+    <!--========================================-->
 
 
     <div class="car">
         <div class="my-slides">
             <div class="numtext"></div>
-            <img src="../assets/fabric.jpg" style="width:100%">
+            <img src="../assets/fabric.jpg" style="width: 100%">
             <div class="caption">1</div>
         </div>
 
         <div class="my-slides">
             <div class="numtext"></div>
-            <img src="../assets/fatherPortrait.jpg" style="width:100%">
+            <img src="../assets/fatherPortrait.jpg" style="width: 100%">
             <div class="caption">2</div>
         </div>
 
         <div class="my-slides">
             <div class="numtext"></div>
-            <img src="../assets/openAfterDeath.jpg" style="width:100%">
+            <img src="../assets/openAfterDeath.jpg" style="width: 100%">
             <div class="caption">3</div>
         </div>
 
         <div class="my-slides">
             <div class="numtext"></div>
-            <img src="../assets/roomCube.jpg" style="width:100%">
+            <img src="../assets/roomCube.jpg" style="width: 100%">
             <div class="caption">4</div>
         </div>
 
@@ -89,7 +94,10 @@
         <span class="dot" onclick=""></span>
     </div>
 
+    <!--========================================-->
+    <!--========================================-->
 
+    <!--    contains description of exhibit-->
     <div class="desc">
         <div>
             <p>
@@ -112,37 +120,38 @@
         <div>
             <p><br>Guest Curators: Constance Lewallen and Ted Mann</p>
         </div>
-
     </div>
 
 </main>
 
+
+<!-- bottom of the website-->
 <footer>
+    <div class=footer>
+        <div id="building">
+            <p style="font-weight:bold">manetti shrem museum <br><br></p>
+            <p>254 Old Davis Rd. <br>Davis, CA 95616</p>
+        </div>
 
-    <div id="building">
-        <p style="font-weight:bold">manetti shrem museum <br><br></p>
-        <p>254 Old Davis Rd. <br>Davis, CA 95616</p>
+        <div id="hours">
+            <p style="font-weight:bold">Hours <br><br></p>
+            <ul>
+                <li>Tuesday, Wednesday, and Friday: Noon-6pm</li>
+                <li>Thursday: Noon-9pm</li>
+                <li>Saturday-Sunday: 11am-5pm</li>
+                <li>Monday: Closed</li>
+            </ul>
+        </div>
+
+        <div id="status">
+            <p style="font-weight:bold">The Manetti Shrem Museum will be temporarily closed starting March 16, 2020 <br><br>
+            </p>
+            <p>This is to prioritize the health and safety of our students, faculty, and the community at large. Thank
+                you
+                for your patience.
+            </p>
+        </div>
     </div>
-
-    <div id="hours">
-        <p style="font-weight:bold">Hours <br><br></p>
-        <ul>
-            <li>Tuesday, Wednesday, and Friday: Noon-6pm</li>
-            <li>Thursday: Noon-9pm</li>
-            <li>Saturday-Sunday: 11am-5pm</li>
-            <li>Monday: Closed</li>
-        </ul>
-    </div>
-
-    <div id="status">
-        <p style="font-weight:bold">The Manetti Shrem Museum will be temporarily closed starting March 16, 2020 <br><br>
-        </p>
-        <p>This is to prioritize the health and safety of our students, faculty, and the community at large. Thank
-            you
-            for your patience.
-        </p>
-    </div>
-
 </footer>
 
 
