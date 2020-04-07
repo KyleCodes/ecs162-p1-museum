@@ -1,3 +1,8 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
 header {
     font-family: Montserrat
 }
@@ -8,10 +13,12 @@ body {
 
 footer {
     font-family: Montserrat
-}
-
-.redText {
-    color: red
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items:center;*/
+    background-color: lightblue;
+    padding: 3vw;
 }
 
 .header-bar {
@@ -20,7 +27,7 @@ footer {
     height: 70px;
 }
 
-.titl {
+.title {
     order: 1;
     align-self: center;
     padding-left: 25px;
@@ -33,7 +40,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     width: 180px;
-    padding-top: 17px;
+    padding-top: 20px;
     padding-right: 25px;
     font-size: 120%;
 }
@@ -43,12 +50,12 @@ footer {
     color: white;
     background-color: black;
     justify-content: center;
+    align-items: center;
     font-size: 7vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    height: 20vw;
 }
 
-.title {
+.headline {
     display: flex;
     color: black;
     flex-direction: column;
@@ -138,15 +145,6 @@ footer {
     padding-left: 18vw;
     padding-right: 18vw;
     padding-bottom: 3vw;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*align-items:center;*/
-    background-color: lightblue;
-    padding: 3vw;
 }
 
 #building {
