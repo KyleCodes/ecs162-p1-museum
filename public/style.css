@@ -16,44 +16,167 @@ header {
 }
 
 body {
-    font-family: Montserrat
+    font-family: "Open Sans"
 }
 
 footer {
     font-family: Montserrat
 }
 
+
 /*
 //========================================================
-//  STYLING OF HEADER
+//  MEDIA QUERY
 */
+/*  IF TABLE OR DESKTOP, FOLLOW THESE STYLES. OTHERWISE
+        USE THE CODE FOLLOWING THIS BLOCK*/
 
-/*  Divide into left and right section*/
-.header-bar {
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
+/*      ONLY CHANGE THE HEADER AND FOOTER HERE      */
+
+@media (min-width: 480px) {
+    /*
+    //========================================================
+    //  STYLING OF HEADER
+    */
+    /*  Divide into left and right section*/
+    .header-bar {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+    }
+
+    /*  Left: museum name*/
+    .title {
+        order: 1;
+        align-self: center;
+        padding-left: 25px;
+    }
+
+    /*  Right: user museum actions*/
+    .actions {
+        order: 2;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 180px;
+        padding-top: 20px;
+        padding-right: 25px;
+        font-size: 120%;
+    }
+
+
+    /*
+    //========================================================
+    //  STYLING OF THE FOOTER
+    */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*align-items:center;*/
+        background-color: #c6d2da;
+        padding: 3vw;
+    }
+
+    #building {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    #hours {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    #status {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+        flex-grow: 3;
+    }
 }
 
-/*  Left: museum name*/
-.title {
-    order: 1;
-    align-self: center;
-    padding-left: 25px;
+@media (max-width: 480px) {
+
+
+    /*
+    //========================================================
+    //  STYLING OF HEADER
+    */
+    /*  Divide into left and right section*/
+    .header-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 65px;
+    }
+
+    /*  Left: museum name*/
+    .title {
+        order: 1;
+        align-self: center;
+        padding-top: 2vw;
+    }
+
+    /*  Right: user museum actions*/
+    .actions {
+        order: 2;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 65%;
+        padding-bottom: 2vw;
+        font-size: 120%;
+    }
+
+
+    /*
+    //========================================================
+    //  STYLING OF THE FOOTER
+    */
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*align-items:center;*/
+        background-color: #c6d2da;
+        padding: 3vw;
+    }
+
+    #building {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    #hours {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    #status {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+        flex-grow: 3;
+    }
+
+
 }
 
-/*  Right: user museum actions*/
-.actions {
-    order: 2;
-    align-self: flex-start;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 180px;
-    padding-top: 20px;
-    padding-right: 25px;
-    font-size: 120%;
-}
+
+
 
 /*
 //========================================================
@@ -89,13 +212,6 @@ footer {
 //========================================================
 //  STYLING OF IMAGE SLIDESHOW (QUITE A LOT HERE)
 */
-
-/*  #f2f2f2   -- I believe this is the text color in the description
-    #778a93   -- highlighted dot for current slide
-    #c6d2da   -- regular dot color
-
-
- */
 
 .car {
     /*padding-bottom: 5vw;*/
@@ -172,38 +288,3 @@ footer {
     padding-top: 3vw;
 }
 
-/*
-//========================================================
-//  STYLING OF TBE FOOTER
-*/
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*align-items:center;*/
-    background-color: #c6d2da;
-    padding: 3vw;
-}
-
-#building {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-}
-
-#hours {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-}
-
-#status {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    flex-grow: 3;
-}
